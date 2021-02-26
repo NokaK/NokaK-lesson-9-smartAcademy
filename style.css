@@ -1,0 +1,111 @@
+/*ul, ol {
+	list-style: none
+}
+
+.green {
+	color: green;
+}
+
+
+header, header li {
+	color: green;
+}
+.navbar-li {
+	font-size: 20px;
+	color: blue;
+	margin: 0 50px 0 0;
+}
+.navbar > .navbar-li{
+	font-size: 16px;
+}
+.navbar ~ .test{
+  height: 100px;
+  width: 100px;
+  background-color: red;
+}
+.navbar ~ .test:nth-child(3){
+  height: 100px;
+  width: 100px;
+  background-color: purple;
+}
+
+.navbar ~ .test:nth-child(4){
+  height: 100px;
+  width: 100px;
+  background-color: green;
+}
+*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container {
+	max-width: 1520px;
+/*	width: 100%;*/
+	margin: 0 auto;
+	border: 1px solid red;
+	padding: 0 10px;
+	position: relative;
+}
+.box {
+	 height: 100px;
+	 width: 100px;
+	 background-color: red;
+	 margin: 10px;
+}
+.flex {
+	display: flex;
+	/*flex-wrap: wrap;*/
+}
+.justify-between {
+	justify-content: space-between;
+}
+.burger {
+	display: none;
+	font-size: 30px;
+}
+.absolute {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 10
+}
+@media screen and (max-width: 1367px){
+	.contaner {
+		max-width: 1124px;
+	}
+}
+@media screen and  (max-width: 1024px){
+	.box {
+		background-color: green;
+		width: 100%;
+	}
+	.contaner {
+		max-width: 724px;
+		width: 100%;
+	}
+	.flex {
+		flex-direction: column-reverse;
+	}
+	.navbar {
+		display: none
+	}
+	.burger {
+		display: block;
+	}
+}
+
+@media screen and  (max-width: 768px){
+	.box {
+		background-color: pink;
+		/*width: 200px;*/
+	}
+}
+@media screen and (max-width: 480px) {
+	.box {
+		background-color: #000;
+		width: 100%;
+	}
+}
